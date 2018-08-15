@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Pizzeria</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="app.css"> -->
+</head>
+<body>
+  <section class="hero is-link">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Pizzeria
+        </h1>
+        <h2 class="subtitle">
+          Menu zamawiania
+      </div>
+    </div>
+  </section>
+
+  <div class="section">
+    <div class="container">
+      <div class="columns is-desktop">
+        <div class="column">
+          <p class="title is-4">
+            Menu pizzerii
+          </p>
+
+          <table class="table is-fullwidth">
+            <col width="26px">
+
+            <thead>
+              <tr>
+                <th>Numer</th>
+                <th>Nazwa</th>
+                <th>Składniki</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <tbody id="pizza-menu"></tbody>
+          </table>
+        </div>
+
+        <div class="column">
+          <p class="title is-4">
+            Obecne zamówienia
+          </p>
+
+          <div id="notify" class="notification">
+            Nie ma obecnie żadnych zamówień
+          </div>
+
+          <table id="order-table" class="table is-fullwidth is-hidden">
+            <col width="26px">
+
+            <thead>
+              <tr>
+                <th>Numer</th>
+                <th>Nazwa</th>
+                <th>Składniki</th>
+                <th class="has-text-right">Czas oczekiwania</th>
+              </tr>
+            </thead>
+
+            <tbody id="order-menu"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
